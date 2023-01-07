@@ -11,6 +11,6 @@ You can run the script by calling the `main()` function. The script will scrape 
 
 ## Dependencies:
 
-* requests
-* beautifulsoup4
-* pandas
+* `requests`
+* `beautifulsoup4`
+* `pandas`
