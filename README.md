@@ -10,7 +10,7 @@ This is a web scraping script that extracts information from the [CoreyMS websit
 * Abstract
 * YouTube link (if available)
 
-The collected information is then stored in a Pandas DataFrame and saved to an Excel file (`coreyMS_link.xlsx`).
+The collected information is then stored in a Pandas DataFrame and saved to an Excel file.
 
 ## How to use:
 
