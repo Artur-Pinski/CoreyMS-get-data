@@ -32,7 +32,7 @@ def extract_info(url):
         # Extract the text of all div elements within the article
         div_elements = [div.text.strip() for div in article.find_all('div', class_='entry-content')]
         # Extract the src of all iframe elements within the article
-        iframe_elements = [iframe['src'] for iframe in article.find_all('iframe')]  
+        iframe_elements = [iframe['src'].split('?version')[0].replace('embed', 'watch') for iframe in article.find_all('iframe')] 
         date_post = [i.text for i in article.find_all('time', class_='entry-time')]
         # Combine the information from the a, div, and iframe elements into a single list
         temp_list = a_elements + b_elements + div_elements + date_post + iframe_elements 
